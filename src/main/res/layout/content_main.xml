@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.beautyalarm.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="#FAFAFA">
+
+    <ImageView
+        android:src="@drawable/wedding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="37dp"
+        android:layout_alignBottom="@+id/buttonRemind"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonRemind"
+        android:onClick="alarm_on"
+        android:text="设置提醒"
+        android:background="#FAFAFA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="415dp"
+        android:background="#FAFAFA"
+        android:id="@+id/buttonRest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="放松一下" />
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="备注："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textSize="10sp"
+            android:id="@+id/editText"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="确定"
+            android:textSize="13sp"
+            android:background="#FAFAFA"
+            android:layout_width="45dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
